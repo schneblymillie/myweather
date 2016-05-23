@@ -1,0 +1,45 @@
+/*
+Error: Invalid CSS after "...xt-decoration: ": expected expression (e.g. 1px, bold), was "; "
+        on line 14 of /Users/mschnebly/Desktop/webapp/css/styles.scss
+
+9:     color: blue; 
+10:     font-size: 10em; 
+11: }
+12: 
+13: li {
+14:     text-decoration: ; 
+15: }
+
+Backtrace:
+/Users/mschnebly/Desktop/webapp/css/styles.scss:14
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1179:in `expected'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/lexer.rb:227:in `expected!'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/parser.rb:673:in `assert_expr'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/parser.rb:63:in `parse'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1041:in `sass_script'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:894:in `value!'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:767:in `block in try_declaration'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1155:in `call'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1155:in `rethrow'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:780:in `try_declaration'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:709:in `declaration_or_ruleset'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:674:in `block_child'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:663:in `block_contents'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:655:in `block'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:647:in `ruleset'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:673:in `block_child'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:666:in `block_contents'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:123:in `stylesheet'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:39:in `parse'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:403:in `_to_tree'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Users/mschnebly/Downloads/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...xt-decoration: \": expected expression (e.g. 1px, bold), was \"; \"\A         on line 14 of /Users/mschnebly/Desktop/webapp/css/styles.scss\A \A 9:     color: blue; \A 10:     font-size: 10em; \A 11: }\A 12: \A 13: li {\A 14:     text-decoration: ; \A 15: }"; }
