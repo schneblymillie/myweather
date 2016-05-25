@@ -1,6 +1,6 @@
 <!-- @import _html-header -->
 
-<body>
+<body class="">
 	
 <!--	TAB NAV       -->
     <h1>This is the fucking weather. </h1>
@@ -17,11 +17,19 @@
           <li class="item city">City</li>
           <li class="item temp">100</li>
           <li class="item icon">05</li>
-              <i></i>
+              <i class=""></i>
+      </ul>
+      
+      <h3>Forecast</h3>
+      <ul class="ui list" id="d1">
+        <li class="item day">day</li>
+        <li class="item temp">100</li>
+        <li class="item icon">00</li>
+              <i class=""></i>
       </ul>
     </div>
     
-    <div class="ui bottom attached tab segment" data-tab="second">
+    <div class=" ui bottom attached tab segment" data-tab="second">
       <ul class="ui list" id="Cheney">
           <li class="item city">City</li>
           <li class="item temp">100</li>
@@ -29,12 +37,15 @@
       </ul>
     </div>
     
-    <div class="ui bottom attached tab segment" data-tab="third">
-      <ul class="ui list" id="Cheney">
-          <li class="item city">City</li>
-          <li class="item temp">100</li>
-          <li class="item icon">05</li>
-      </ul>
+    <div class="geo ui bottom attached tab segment" data-tab="third" id="geo-tab">
+    
+         <button class="ui inverted teal button">locate</button>
+
+          <ul class="ui list" id="Cheney">
+              <li class="item city">City</li>
+              <li class="item temp">100</li>
+              <li class="item icon">05</li>
+          </ul>
     </div>
 
 

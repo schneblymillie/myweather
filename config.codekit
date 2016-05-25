@@ -133,7 +133,7 @@
 		},
 	"\/html\/weather.kit": {
 		"fileType": 2048,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/html\/weather.kit",
 		"outputAbbreviatedPath": "\/weather.html",
