@@ -10,7 +10,7 @@
 // Third, load any plugins (optional)
 // @codekit-prepend "plugins.js";
 
-// My Scripts
+// My Scripts WEATHER JS
 (function($) {
   'use strict';
 
@@ -149,13 +149,102 @@ $.simpleWeather({
         //Display Icon
       $('#cheney i').addClass( 'icon-' + weather.code );
         
+          console.log(weather);
+        
 // Add Custom BAckground Body Class
-    if ( weather.code >= 26 && weather.code <= 30 ) {
+    if ( weather.code >= 0 && weather.code <= 4 ) {
         
         $('body').removeClass(); 
         $('body').addClass('bg-1'); 
         
+     }
+
+    if ( weather.code >= 5 && weather.code <= 8 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-2'); 
+        
+     }
+        
+    if ( weather.code >= 9 && weather.code <= 12 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-3'); 
+        
+     }
+        
+    if ( weather.code >= 13 && weather.code <= 18 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-4'); 
+        
+     }
+        
+    if ( weather.code == 19 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-5'); 
+        
+     }
+        
+    if ( weather.code >= 20 && weather.code <= 22 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-6'); 
+        
+     }       
+        
+    if ( weather.code >= 23 && weather.code <= 24 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-7'); 
+        
      } 
+        
+    if ( weather.code == 25 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-8'); 
+        
+     } 
+        
+    if ( weather.code >= 26 && weather.code <= 31 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-9'); 
+        
+     } 
+        
+    if ( weather.code >= 32 && weather.code <= 34 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-10'); 
+        
+     }
+        
+    if ( weather.code == 35 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-11'); 
+        
+     }
+        
+    if ( weather.code == 36 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-12'); 
+        
+     }
+        
+    if ( weather.code >= 37 && weather.code <= 47 ) {
+        
+        $('body').removeClass(); 
+        $('body').addClass('bg-13'); 
+        
+     }
+
+        
+
         
     //GET FORCAST
         $('#d1 .day').text(weather.forecast[1].date); 
