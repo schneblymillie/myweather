@@ -5,13 +5,69 @@
 
 /* My Styles */
 
+.main {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4em; 
+}
+
+
+
 #cheney i {
-    color: blue; 
+    color: lightgrey; 
     font-size: 10em; 
 }
 
 /*custom background*/
- 
 .bg-1 {
-    background: lightgrey; 
+    background: grey; 
+}
+
+.bg-2 {
+    background: paleturquoise; 
+} 
+
+.bg-3 {
+    background: turquoise; 
+} 
+
+.bg-4 {
+    background: whitesmoke; 
+}
+
+.bg-5 {
+    background: rosybrown; 
+}
+
+.bg-6 {
+    background: ivory; 
+}
+
+.bg-7 {
+    background: lightblue; 
+}
+
+.bg-8 {
+    background: aqua; 
+}
+
+.bg-9 {
+    background: cadetblue; 
+}
+
+.bg-10 {
+    background: khaki; 
+}
+
+.bg-11 {
+    background: teal; 
+}
+
+.bg-12 {
+    background: tomato; 
+}
+
+.bg-13 {
+    background: skyblue; 
 }
