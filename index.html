@@ -26,7 +26,7 @@
 
 
 
-	<title>Web 3 Starter Starter</title>
+	<title>Weather App</title>
 	
 	<!-- Compiled Stylesheet -->
 	<link rel="stylesheet" href="css-min/styles.min.css">
@@ -158,7 +158,7 @@
 
 
 
-	<title>Web 3 Starter Starter</title>
+	<title>Weather App</title>
 	
 	<!-- Compiled Stylesheet -->
 	<link rel="stylesheet" href="css-min/styles.min.css">
@@ -266,51 +266,46 @@
 <body class="">
 	
 <!--	TAB NAV       -->
-    <h1>This is the fucking weather. </h1>
-    <div class="ui top attached tabular menu">
-      <a class="active item" data-tab="first">CHENEY</a>
-      <a class="item" data-tab="second">SPOKANE</a>
-      <a class="item" data-tab="third">WHERE THE FUCK</a>
-    </div>
-    
-    
-<!--    TAB CONTENT     -->
-    <div class="ui bottom attached active tab segment" data-tab="today">
-      <ul class="ui list" id="cheney">
-          <li class="item city">City</li>
-          <li class="item temp">100</li>
-          <li class="item icon">05</li>
-              <i class=""></i>
-      </ul>
-      
-      <h3>Forecast</h3>
-      <ul class="ui list" id="d1">
-        <li class="item day">day</li>
-        <li class="item temp">100</li>
-        <li class="item icon">00</li>
-              <i class=""></i>
-      </ul>
-    </div>
-    
-    <div class=" ui bottom attached tab segment" data-tab="second">
-      <ul class="ui list" id="Cheney">
-          <li class="item city">City</li>
-          <li class="item temp">100</li>
-          <li class="item icon">05</li>
-      </ul>
-    </div>
-    
-    <div class="geo ui bottom attached tab segment" data-tab="third" id="geo-tab">
-    
-         <button class="ui inverted teal button">locate</button>
+    <div class="main">
+        <div class="ui top attached tabular menu">
+          <a class="active item" data-tab="first">CHENEY</a>
+          <a class="item" data-tab="second">SPOKANE</a>
+          <a class="item" data-tab="third">FIND ME</a>
+        </div>
 
+
+    <!--    TAB CONTENT     -->
+        <div class="ui bottom attached active tab segment" data-tab="today">
+          <ul class="ui list" id="cheney">
+              <li class="item city">City</li>
+              <li class="item temp">100</li>
+              <li class="item icon">05</li>
+                  <i class=""></i>
+          </ul>
+
+        </div>
+
+        <div class=" ui bottom attached tab segment" data-tab="second">
           <ul class="ui list" id="Cheney">
               <li class="item city">City</li>
               <li class="item temp">100</li>
               <li class="item icon">05</li>
+                  <i class=""></i>
           </ul>
-    </div>
+        </div>
 
+        <div class="geo ui bottom attached tab segment" data-tab="third" id="geo-tab">
+
+             <button class="ui inverted teal button">locate</button>
+
+              <ul class="ui list" id="Cheney">
+                  <li class="item city">City</li>
+                  <li class="item temp">100</li>
+                  <li class="item icon">05</li>
+                      <i class=""></i>
+              </ul>
+        </div>
+    </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js-min/jquery-2.2.2-min.js"><\/script>')</script>
