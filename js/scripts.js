@@ -136,6 +136,31 @@ $('.menu .item')
   .tab()
 ;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //GET CHENEY WEATHER
 $.simpleWeather({
     location: '99004',
@@ -267,16 +292,16 @@ $.simpleWeather({
 
 //GET SPOKANE WEATHER
 $.simpleWeather({
-    location: '99004',
+    location: '83814',
     woeid: '',
     unit: 'f',
     success: function(weather) {
       
       // Display Data
-      $('#cheney .city').text(weather.city);
-      $('#cheney .temp').text(weather.temp);
+      $('#cda .city').text(weather.city);
+      $('#cda .temp').text(weather.temp);
         //Display Icon
-      $('#cheney i').addClass( 'icon-' + weather.code );
+      $('#cda i').addClass( 'icon-' + weather.code );
 
     
       // Entire weather object
@@ -289,54 +314,7 @@ $.simpleWeather({
   });
 
 
-//GET GEO LOCATION
-// Check for GeoLocation Support on Browser
-if ('geolocation' in navigator) {
 
-$('.geo button').show(); 
-
-} else {
-
-$('.geo button').hide();
-$('.geo').prepend('<p>Geolocation Not Supported</p>');
-
-}
-
-// On Click, Get Geolocation, Call Weather Function
-$('.geo button').click( function() {
-  
-     
-//load weather using your lat/lng coordinates
-    navigator.geolocation.getCurrentPosition(function(position) {
-        getWeather(position.coords.latitude+','+position.coords.longitude); 
-    });
-   
-});
-
-
-//Get geolocation weather
-var getWeather = function(location) {
-    
-   $.simpleWeather({
-    location: location,
-    woeid: '',
-    unit: 'f',
-    success: function(weather) {
-      
-      // Display Data
-      $('.geo .city').text(weather.temp);
-      $('.geo .temp').text(weather.city);
-      $('.geo i').addClass( 'icon-' + weather.code );
-      // Entire weather object
-      console.log();
-    },
-    error: function(error) {
-      // Show if weather cannot be retreived
-    }
-  
-  });   
-    
-};
 
 
 
